@@ -61,12 +61,123 @@
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
                <fieldset class="catalog-filter-group">
                   <legend class="catalog-filter-title">Инфраструктура</legend>
+
+                  <ul class="catalog-filter-list">
+                     <li class="catalog-filter-item">
+                       <label class="control">
+                         <input class="control-input" type="checkbox" name="swimming-pool" checked>
+
+                     Бассейн
+                       </label>
+                     </li>
+                 <li class="catalog-filter-item">
+                   <label class="control">
+                     <input class="control-input" type="checkbox" name="parking" checked>
+
+                     Парковка
+                   </label>
+                 </li>
+                 <li class="catalog-filter-item">
+                   <label class="control">
+                     <input class="control-input" type="checkbox" name="wifi">
+
+                     Wi-Fi
+                   </label>
+                 </li>
+                 </ul>
+
                </fieldset>
                <fieldset class="catalog-filter-group">
                   <legend class="catalog-filter-title">Тип жилья</legend>
+
+                  <ul class="catalog-filter-list">
+                     <li class="catalog-filter-item">
+                       <label class="control">
+                         <input class="control-input" type="radio" name="product-group" value="hotel" checked>
+
+                     Гостиница
+                       </label>
+                     </li>
+                     <li class="catalog-filter-item">
+                       <label class="control">
+                         <input class="control-input" type="radio" name="product-group" value="motel" >
+
+                     Мотель
+                       </label>
+                     </li>
+                     <li class="catalog-filter-item">
+                       <label class="control">
+                         <input class="control-input" type="radio" name="product-group" value="appart">
+
+                     Апартаменты
+                       </label>
+                     </li>
+                   </ul>
+
                </fieldset>
                <button class="button" type="submit">Применить</button>
+               <button class="button-del" type="reset">Сбросить</button>
             </form>
+
+            тут будет ползунок Стоимость
+
+         </section>
+
+         <section>
+            <span class="hotel-number">
+               найдено гостиниц:38
+            </span>
+            <select class="select-control" aria-label="Сортировка">
+               <option value="cheap">Сначала дешёвые</option>
+               <option value="expensive">Сначала дорогие</option>
+               <option value="popular">Сначала популярные</option>
+
+             </select>
+             <a href="#" class="button button-light">
+               <span class="visually-hidden">Показать список</span>
+             </a>
+               <a class="button" href="#">
+               <span class="visually-hidden">Показать фото</span>
+             </a>
+             <a class="button" href="#">
+               <span class="visually-hidden">Показать карточки</span>
+             </a>
+
+             <ul class="product-list">
+               <li class="product-card">
+                 <a class="product-card-link" href="product.html">
+                   <img class="product-card-image" src="#" alt="">
+                   <h3 class="product-card-title">Шампунь для мужчин Brews Daily</h3>
+                 </a>
+                 <span class="product-card-price">744 ₽</span>
+                 <a class="product-card-button button" href="#">Купить</a>
+               </li>
+               <li class="product-card">
+                 <a class="product-card-link" href="#">
+                   <img class="product-card-image" src="#" alt="">
+                   <h3 class="product-card-title">Syoss шампунь Men Power &amp; Strength</h3>
+                 </a>
+                 <span class="product-card-price">160 ₽</span>
+                 <a class="product-card-button button" href="#">Купить</a>
+               </li>
+               <li class="product-card">
+                 <a class="product-card-link" href="#">
+                   <img class="product-card-image" src="#" alt="">
+                   <h3 class="product-card-title">Schauma шампунь для мужчин «Сила и объём с хмелем»</h3>
+                 </a>
+                 <span class="product-card-price">94 ₽</span>
+                 <a class="product-card-button button" href="#">Купить</a>
+               </li>
+               <li class="product-card">
+                 <a class="product-card-link" href="#">
+                   <img class="product-card-image" src="#" alt="">
+                   <h3 class="product-card-title">Nivea Men шампунь-уход «Экстремальная свежесть с ментолом»</h3>
+                 </a>
+                 <span class="product-card-price">173 ₽</span>
+                 <a class="product-card-button button" href="#">Купить</a>
+               </li>
+             </ul>
+
          </section>
       </main>
       <footer class="page-footer">
